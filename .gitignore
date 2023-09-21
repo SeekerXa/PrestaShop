@@ -120,6 +120,8 @@ themes/*/
 !themes/classic
 !themes/_core
 !themes/_libraries
+!child_classic
+child_classic/assets/cache
 
 # Vendors and dependencies
 

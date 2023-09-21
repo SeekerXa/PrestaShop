@@ -1,0 +1,93 @@
+
+#search_widget ::placeholder { 
+  color: black;
+  opacity: 1;
+}
+
+
+#header .header-top {
+  background-color: white;
+}
+
+#search_widget {
+  width: 100%;
+  height: 60px;
+  border: 1px solid lightgray;
+  font-family: 'Montserrat', sans-serif;
+}
+#search_widget form {
+  position: relative;
+  height: 100%;
+  
+}
+#search_widget form i {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  color: #b92037;
+  background-color: #434242;
+  padding-top: 19px;
+  padding-left: 26px;
+  height: 61px;
+  width: 71px;
+}
+#search_widget form i.clear {
+  right: 15px;
+  display: none;
+}
+#search_widget form input {
+  height: 100%;
+  width: 90%;
+  padding: 9px 20px 11px 20px;
+  outline: none;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.ui-autocomplete.searchbar-autocomplete {
+  width: 100%;
+  min-height: 100%;
+  border: none;
+}
+
+.ui-autocomplete.searchbar-autocomplete li a, .ui-autocomplete.searchbar-autocomplete li a.ui-state-focus {
+  padding: 8px 15px;
+  overflow: auto;
+  border: none;
+  background: none;
+  margin: auto;
+  border-radius: 0;
+}
+
+.ui-autocomplete.searchbar-autocomplete li a:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.ui-autocomplete.searchbar-autocomplete li a .autocomplete-thumbnail {
+  float: left;
+  width: 50px;
+  height: auto;
+  margin-right: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  #search_widget {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .ui-autocomplete.searchbar-autocomplete {
+    width: 400px;
+    min-height: auto;
+    left: auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #search_widget {
+    min-width: 16.5rem;
+  }
+}

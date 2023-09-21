@@ -1,0 +1,108 @@
+/**
+ * Copyright since 2007 PrestaShop SA and Contributors
+ * PrestaShop is an International Registered Trademark & Property of PrestaShop SA
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License version 3.0
+ * that is bundled with this package in the file LICENSE.md.
+ * It is also available through the world-wide-web at this URL:
+ * https://opensource.org/licenses/AFL-3.0
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@prestashop.com so we can send you a copy immediately.
+ *
+ * @author    PrestaShop SA and Contributors <contact@prestashop.com>
+ * @copyright Since 2007 PrestaShop SA and Contributors
+ * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License version 3.0
+ */
+.homeslider-container {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.container{
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.homeslider {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.homeslider li {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.homeslider img {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  width: 100%;
+  border: 0;
+}
+
+.homeslider .caption {
+  display: block;
+  position: absolute;
+  z-index: 0;
+  font-size: 1em;
+  text-shadow: none;
+  color: #fff;
+  background-color: rgb(189 7 19 / 83%);
+  left: 51%;
+  right: 5%;
+  bottom: 15%;
+  top: 43%;
+  padding: 10px 20px;
+  margin: 0;
+  max-width: none;
+}
+
+
+.homeslider_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 30px;
+  width: 30px;
+  background: transparent url("../ArrowLeft.png") no-repeat ;
+  margin-top: -45px;
+}
+
+.homeslider_nav:active {
+  opacity: 1.0;
+}
+
+.homeslider_nav.next {
+  left: auto;
+  rotate: 180deg;
+  background-position: right top;
+  right: -60px;
+  top: 55%;
+}
+
+.homeslider_nav.prev {
+  left: auto;
+  background-position: right top;
+  left: -60px;
+  top: 57%;
+}

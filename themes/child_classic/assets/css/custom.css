@@ -1,0 +1,257 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+
+ body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25em;
+}
+
+
+
+#_desktop_logo{
+    padding-left: 0px;
+    margin-left: 15px;
+    padding-right: 14px;
+
+}
+
+#bannertop{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+}
+
+.container{
+    width: 1416px;
+}
+
+#close-button{
+    background: none;
+    border: none;
+    position: absolute;
+    right: -8px;
+    top: 8px;
+    font-size: 44px;
+    margin: auto;
+   
+}
+
+#banner_tekst{
+    margin-top: 10px;
+}
+
+.top-menu a[data-depth="0"] {
+    font-family: 'Montserrat';
+    padding: .625rem;
+    font-size: 15px;
+    font-weight: 400
+}
+
+div#bannertop span{
+    font-size: 14px;
+    word-spacing: 0px;
+    font-weight: 400;
+}
+
+#header {
+    box-shadow: none;
+    height: auto;
+}
+
+#header .header-nav-1 {
+    height: 100px;
+}
+ 
+
+#header .header-nav .logo {
+    margin:1em;
+}
+ 
+
+#header .header-top {
+    border-width: 34px 0px 35px;
+    border-image: radial-gradient(#dfdfdf, #ffffff) 1;
+    border-style: solid;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#row_header{
+    height: 100px;
+}
+
+#container_header {
+    width: 1416px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.nav_search_widget{
+    padding-top: 38px;
+    padding-left: 62px;
+    padding-right: 7px;
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+
+#customer_nav {
+    
+    width: auto;
+    height: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-left: 10px;
+    margin-left: 0px;
+    padding-right: 0px;
+    
+}
+
+
+#register_panel_container{
+    padding-top: 3em;
+    margin-left: 78px;
+    display: flex;
+    flex-direction: column;
+}
+
+#register_panel_icon{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#register_panel_text{
+    padding-top: 6px;
+    padding-left: 0px;
+    font-family: 'Sen';
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0;
+}
+
+
+#login_panel_container{
+    padding-top: 3em;
+    margin-left: 27px;
+    display: flex;
+    flex-direction: column;
+}
+
+#login_panel_icon{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login_panel_text{
+    padding-top: 6px;
+    padding-left: 0px;
+    font-family: 'Sen';
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0;
+}
+
+#account_panel_container{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#account_panel_icon{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#account_panel_text{
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 13px; 
+}
+
+#logout_panel_container{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#logout_panel_icon{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logout_panel_text{
+    color: #000;
+    font-family: 'Montserrat';
+    font-size: 13px; 
+}
+
+#cart_count_background {
+    text-align: center;
+    top: 34px;
+    right: 0px;
+    position: absolute;
+    background: #434242;
+    clip-path: circle(50%);
+    height: 19px;
+    width: 19px;
+ }
+
+#cart_quantity_tekst{
+    font-family: 'Sen';
+    color: #ffffff;
+    font-size: 11px; 
+
+}
+
+#cart_panel_container{
+    position: absolute;
+    right: -71px;
+    padding-left: 27px;
+    padding-top: 45px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cart_panel_icon{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#custom_cart_img{
+    width: 20px;
+    height: 22px;
+}
+#cart_panel_text{
+    padding-top: 6px;
+    padding-left: 0px;
+    font-family: 'Sen';
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0;
+}
+
+#wrapper_conatiner{
+    width: 1416px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+    padding-right: 8px;
+}
