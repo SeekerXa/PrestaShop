@@ -68,9 +68,9 @@
   <div class="header-top">
     <div class="container">
        <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
+        <div class="col-md-1 hidden-sm-down" id="_desktop_logo">
         </div>
-        <div class="header-top-right col-md-10 col-sm-12 position-static">
+        <div class="header-top-right col-md-10 col-sm-12 position-static" id="main_menu_top">
           {hook h='displayTop'}
         </div>
       </div>
