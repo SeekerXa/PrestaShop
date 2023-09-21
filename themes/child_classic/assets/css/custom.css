@@ -181,7 +181,8 @@ div#bannertop span{
 }
 
 #account_panel_container{
-    padding-top: 40px;
+    padding-top: 2.9em;
+    margin-left: 78px;
     display: flex;
     flex-direction: column;
 }
@@ -194,13 +195,18 @@ div#bannertop span{
 }
 
 #account_panel_text{
-    color: #000;
-    font-family: 'Montserrat';
-    font-size: 13px; 
+    padding-top: 1px;
+    padding-left: 0px;
+    font-family: 'Sen';
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0;
 }
 
 #logout_panel_container{
-    padding-top: 40px;
+    padding-top: 3.2em;
+    margin-left: 36px;
+    padding-right: 9px;
     display: flex;
     flex-direction: column;
 }
@@ -213,9 +219,12 @@ div#bannertop span{
 }
 
 #logout_panel_text{
-    color: #000;
-    font-family: 'Montserrat';
-    font-size: 13px; 
+    padding-top: 7px;
+    padding-left: 0px;
+    font-family: 'Sen';
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0;
 }
 
 #cart_count_background {
