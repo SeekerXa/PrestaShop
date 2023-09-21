@@ -9,6 +9,11 @@
     line-height: 1.25em;
 }
 
+#content{
+    margin-top: -48px;
+}
+
+
 #wrapper{
     padding-top: 10px;
     margin-top: -10px;
@@ -51,22 +56,14 @@
 }
 
 #header .header-top a[data-depth="0"] {
-    color: #7a7a7a;
+    color: #000000;
     text-transform: capitalize;
-    padding: 10px 44px 10px 22px;
-    
-    
-}
-
-
-.top-menu a[data-depth="0"] {
-    font-family: 'Montserrat';
-    padding: .625rem;
+    padding: 10px 44px 10px 21px;
     font-size: 15px;
-    font-weight: 400;
-    padding: 10px 0px 10px 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    
 }
-
 
 
 div#bannertop span{
