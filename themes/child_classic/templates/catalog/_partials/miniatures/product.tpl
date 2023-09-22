@@ -30,7 +30,7 @@
         {block name='product_thumbnail'}
           {if $product.cover}
             <a href="{$product.url}" class="thumbnail product-thumbnail">
-              <picture>
+              <picture id=product_picture_promotion>
                 {if !empty($product.cover.bySize.home_default.sources.avif)}<source srcset="{$product.cover.bySize.home_default.sources.avif}" type="image/avif">{/if}
                 {if !empty($product.cover.bySize.home_default.sources.webp)}<source srcset="{$product.cover.bySize.home_default.sources.webp}" type="image/webp">{/if}
                 <img
