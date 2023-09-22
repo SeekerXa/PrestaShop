@@ -119,9 +119,23 @@
           {hook h='displayProductListReviews' product=$product}
         {/block}
       </div>
-
       {include file='catalog/_partials/product-flags.tpl'}
-    </div>
+
+      <div class="add">
+          <button
+            class="btn btn-primary add-to-cart"
+            data-button-action="add-to-cart"
+            {if !$product.add_to_cart_url}
+              disabled
+            {/if}
+            id="Main-add_to_card"
+            >
+            <i class="material-icons shopping-cart">&#xE547;</i>
+            {l s='Do koszyka' d='Shop.Theme.Actions'}
+          </button>
+        </div>
+
+    </div>  
   </article>
 </div>
 {/block}

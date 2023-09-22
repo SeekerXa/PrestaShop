@@ -313,17 +313,20 @@ div#bannertop span{
 
 #product_panel{
     margin-top: 59px;
-    height: 500px;
+    height: 520px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    margin-left: -3px;
+    margin-bottom: 50px;
 }
 
 #products_container{
     padding-top: 5px;
     display: -webkit-inline-box;
     overflow-x: hidden;
-    
+    margin-left: -1px;
+    height: auto;
 
 }
 
@@ -336,6 +339,17 @@ div#bannertop span{
     flex-wrap: nowrap;
     overflow-x: auto;
 }
+
+.product-miniature, .product-miniature .product {
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.product-miniature .thumbnail-container{
+    height: auto;
+    margin-bottom: 0px;
+}
+
 
 .products article .wishlist-button-add{
     z-index: -1;
@@ -391,4 +405,28 @@ div#bannertop span{
     font-size: .875rem;
     font-weight: 700;
     color: black;
+}
+
+.product-miniature .product-description{
+    height: 184px;
+}
+
+
+.btn, .btn-primary, .add-to-cart:hover{
+
+    padding: 0.5rem 1.25rem;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-transform:uppercase;
+    height: 60px;
+    width: 250px;
+    margin-left: 5px;
+    line-height: 3.25;
+    letter-spacing: 1px;
+    background-color: #434242;
+}
+
+.add-to-cart:hover{
+    background-color: #bd0713;
 }
