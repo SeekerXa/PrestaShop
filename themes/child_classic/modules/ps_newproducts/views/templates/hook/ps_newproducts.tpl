@@ -26,22 +26,22 @@
 <section>
   <h1>{l s='New products' d='Modules.Newproducts.Shop'}</h1>
   <div id="product_panel">
-    <nav class="arrow_img prev"></nav>
-      <div class="products " id="products_container">
+    <nav class="arrow_img prev" id="new_left"></nav>
+      <div class="products " id="newproducts_container">
         {foreach from=$products item="product"}
           {include file="catalog/_partials/miniatures/product.tpl" product=$product}
         {/foreach}
       </div>
-    <nav class="arrow_img next"></nav>
+    <nav class="arrow_img next" id="new_right"></nav>
   </div>
   <a href="{$allNewProductsLink}">{l s='All new products' d='Modules.Newproducts.Shop'}</a>
 </section>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const productContainer = document.getElementById("products_container");
-    const prevButton = document.querySelector(".prev");
-    const nextButton = document.querySelector(".next");
+    const productContainer = document.getElementById("newproducts_container");
+    const prevButton = document.getElementById("new_left");
+    const nextButton = document.getElementById("new_right");
     const step = 200; // Dostosuj wartość przewijania do swoich potrzeb
 
     prevButton.addEventListener("click", function () {

@@ -22,6 +22,7 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
+ {debug} 
 {block name='product_miniature_item'}
 <div class="js-product product{if !empty($productClasses)} {$productClasses}{/if}">
   <article class="product-miniature js-product-miniature" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}">
@@ -86,27 +87,32 @@
         {block name='product_price_and_shipping'}
           {if $product.show_price}
             <div class="product-price-and-shipping">
-              {if $product.has_discount}
-                {hook h='displayProductPriceBlock' product=$product type="old_price"}
-
-                <span class="regular-price" aria-label="{l s='Regular price' d='Shop.Theme.Catalog'}">{$product.regular_price}</span>
-                {if $product.discount_type === 'percentage'}
-                  <span class="discount-percentage discount-product">{$product.discount_percentage}</span>
-                {elseif $product.discount_type === 'amount'}
-                  <span class="discount-amount discount-product">{$product.discount_amount_to_display}</span>
-                {/if}
-              {/if}
 
               {hook h='displayProductPriceBlock' product=$product type="before_price"}
 
-              <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">
-                {capture name='custom_price'}{hook h='displayProductPriceBlock' product=$product type='custom_price' hook_origin='products_list'}{/capture}
-                {if '' !== $smarty.capture.custom_price}
-                  {$smarty.capture.custom_price nofilter}
-                {else}
-                  {$product.price}
-                {/if}
-              </span>
+              {block name='product_with_taxes'}  
+                <p class="product-with-taxes">
+                  {$product.price} brutto
+                </p>
+              {/block}
+
+              {block name='product_without_taxes'}  
+                <p class="product-without-taxes">{l s='%price% netto' d='Shop.Theme.Catalog' 
+                  sprintf=['%price%' => Context::getContext()->currentLocale->formatPrice($product.price_tax_exc, $currency.iso_code)]}
+                </p>
+              {/block}
+
+              {if $product.has_discount}
+                {hook h='displayProductPriceBlock' product=$product type="old_price"}
+                
+                 {* <span class="regular-price" aria-label="{l s='Regular price' d='Shop.Theme.Catalog'}">{$product.regular_price}</span>  *}
+                 {if $product.discount_type === 'percentage'}
+                   <span class="discount-percentage discount-product">{$product.discount_percentage}</span>
+                 {elseif $product.discount_type === 'amount'}
+                   <span class="discount-amount discount-product">{$product.discount_amount_to_display}</span>
+                 {/if}
+               {/if}
+
 
               {hook h='displayProductPriceBlock' product=$product type='unit_price'}
 

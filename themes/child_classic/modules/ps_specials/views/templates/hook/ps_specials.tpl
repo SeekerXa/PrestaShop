@@ -26,7 +26,6 @@
 *}
 
 <section>
-  
   <h1 id="product_h1">{l s='Promocje' d='Modules.Specials.Shop'}</h1>
     <div id="product_panel">
       <nav class="arrow_img prev"></nav>

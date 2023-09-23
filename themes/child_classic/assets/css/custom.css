@@ -400,10 +400,14 @@ div#bannertop span{
     width: 260px;
 }
 
+.product-miniature .product-title{
+    height: 45px;
+}
+
 .product-miniature .product-title a {
     font-family: 'Montserrat';
     font-size: .875rem;
-    font-weight: 700;
+    font-weight: 800;
     color: black;
 }
 
@@ -435,4 +439,29 @@ div#bannertop span{
 
 a:active{
     background-color: #bd0713;
+}
+
+.product-miniature .product-price-and-shipping{
+  
+    .product-with-taxes{
+        text-align: center;
+        color: #bd0713;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        font-weight: 800; 
+        margin:0px; 
+        margin-bottom: 2px;
+    } 
+
+
+    .product-without-taxes{
+        text-align: center;
+          color: #bd0713;
+          font-size: 18px;
+          font-family: 'Montserrat';
+          font-weight: 800;
+    }
+          
+
+
 }
