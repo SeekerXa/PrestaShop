@@ -321,7 +321,7 @@ div#bannertop span{
     margin-bottom: 50px;
 }
 
-#products_container{
+.products{
     padding-top: 5px;
     display: -webkit-inline-box;
     overflow-x: hidden;
@@ -428,5 +428,11 @@ div#bannertop span{
 }
 
 .add-to-cart:hover{
+    background-color: #bd0713;
+}
+
+
+
+a:active{
     background-color: #bd0713;
 }
