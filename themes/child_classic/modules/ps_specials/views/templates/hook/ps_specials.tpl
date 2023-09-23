@@ -24,14 +24,16 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-
+{debug}
 <section>
   <h1 id="product_h1">{l s='Promocje' d='Modules.Specials.Shop'}</h1>
     <div id="product_panel">
       <nav class="arrow_img prev"></nav>
         <div class="products" id="products_container">
             {foreach from=$products item="product"}
+             
               {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+
             {/foreach}
         </div>
       <nav class="arrow_img next"></nav>

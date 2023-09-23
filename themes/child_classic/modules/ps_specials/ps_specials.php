@@ -271,6 +271,7 @@ class Ps_Specials extends Module implements WidgetInterface
         return $products_for_template;
     }
 
+    
     protected function getCacheId($name = null)
     {
         $cacheId = parent::getCacheId($name);
@@ -279,5 +280,21 @@ class Ps_Specials extends Module implements WidgetInterface
         }
 
         return $cacheId;
+    }
+
+    public function getLowestPricesLast30Days()
+    {
+        $dateFrom = date('Y-m-d H:i:s', strtotime('-30 days'));
+        $dateTo = date('Y-m-d H:i:s');
+
+        $sql = new DbQuery();
+        $sql->select('MIN(`price`) AS min_price, MIN(`price_net`) AS min_price_net');
+        $sql->from('product');
+        $sql->where('date_upd >= \'' . pSQL($dateFrom) . '\' AND date_upd <= \'' . pSQL($dateTo) . '\'');
+
+        $result = Db::getInstance(_PS_USE_SQL_SLAVE_)->getRow($sql);
+
+        return $result;
+
     }
 }

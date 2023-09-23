@@ -313,19 +313,20 @@ div#bannertop span{
 
 #product_panel{
     margin-top: 59px;
-    height: 520px;
+    height: auto;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin-left: -3px;
+    margin-left: 0px;
     margin-bottom: 50px;
 }
 
 .products{
+    width: 1300px;
     padding-top: 5px;
     display: -webkit-inline-box;
     overflow-x: hidden;
-    margin-left: -1px;
+    margin-left: 0px;
     height: auto;
 
 }
@@ -412,11 +413,11 @@ div#bannertop span{
 }
 
 .product-miniature .product-description{
-    height: 184px;
+    height: auto;
 }
 
 
-.btn, .btn-primary, .add-to-cart:hover{
+.btn-primary, .add-to-cart{
 
     padding: 0.5rem 1.25rem;
     font-size: 12px;
@@ -437,8 +438,20 @@ div#bannertop span{
 
 
 
-a:active{
+.btn-primary.active.focus,.btn-primary.active:focus,.btn-primary.active:hover,.btn-primary:active.focus,.btn-primary:active:focus,.btn-primary:active:hover,.open>.btn-primary.dropdown-toggle.focus,.open>.btn-primary.dropdown-toggle:focus,.open>.btn-primary.dropdown-toggle:hover {
+    color: #fff;
     background-color: #bd0713;
+    border-color: transparent
+}
+
+.btn-primary.disabled.focus,.btn-primary.disabled:focus,.btn-primary:disabled.focus,.btn-primary:disabled:focus {
+    background-color: #bd0713;
+    border-color: transparent
+}
+
+.btn-primary.disabled:hover,.btn-primary:disabled:hover {
+    background-color: #bd0713;
+    border-color: transparent
 }
 
 .product-miniature .product-price-and-shipping{
