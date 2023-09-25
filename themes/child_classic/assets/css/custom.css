@@ -93,7 +93,7 @@ div#bannertop span{
 
 #header .header-top {
     border-width: 34px 0px 38px;
-    border-image: radial-gradient(#dfdfdf, #ffffff) 1;
+    border-image: radial-gradient(#f5f1f1, #ffffff) 1;
     border-style: solid;
     padding: 9px 0px;
 }
@@ -356,6 +356,15 @@ div#bannertop span{
 .product-miniature, .product-miniature .product {
     height: auto;
     margin-bottom: 0px;
+    
+}
+
+#spec_product{
+    border: 1px thin gray;
+}
+
+i.icon-basket{
+    font-size: 20px;
 }
 
 .product-miniature .thumbnail-container{
@@ -428,18 +437,21 @@ div#bannertop span{
     height: auto;
 }
 
+.icon-clock{
 
+    color: #bd0713;
+}
 .btn-primary, .add-to-cart{
 
     padding: 0.5rem 1.25rem;
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Montserrat';
     font-weight: 600;
-    text-transform:uppercase;
-    height: 60px;
+    text-transform: uppercase;
+    height: 61px;
     width: 250px;
-    margin-left: 5px;
-    line-height: 3.25;
+    margin-left: 3px;
+    line-height: 22px;
     letter-spacing: 1px;
     background-color: #434242;
 }
@@ -546,11 +558,13 @@ padding-right: 18px;
     font-size: 20px;
     font-family: 'Montserrat';
     font-weight: 800;
+    
 }
 
 #newsdate{
     margin: 20px 8px 8px 8px;
     text-align: center;
+    letter-spacing: -1px;
 }
 
 #newstext{

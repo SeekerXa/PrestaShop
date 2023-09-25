@@ -34,7 +34,7 @@
               <picture id=product_picture_promotion>
                 {if !empty($product.cover.bySize.home_default.sources.avif)}<source srcset="{$product.cover.bySize.home_default.sources.avif}" type="image/avif">{/if}
                 {if !empty($product.cover.bySize.home_default.sources.webp)}<source srcset="{$product.cover.bySize.home_default.sources.webp}" type="image/webp">{/if}
-                <img
+                <img id="spec_product"
                   src="{$product.cover.bySize.home_default.url}"
                   alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                   loading="lazy"
@@ -49,7 +49,7 @@
               <picture>
                 {if !empty($urls.no_picture_image.bySize.home_default.sources.avif)}<source srcset="{$urls.no_picture_image.bySize.home_default.sources.avif}" type="image/avif">{/if}
                 {if !empty($urls.no_picture_image.bySize.home_default.sources.webp)}<source srcset="{$urls.no_picture_image.bySize.home_default.sources.webp}" type="image/webp">{/if}
-                <img
+                <img id="spec_product"
                   src="{$urls.no_picture_image.bySize.home_default.url}"
                   loading="lazy"
                   width="{$urls.no_picture_image.bySize.home_default.width}"
@@ -136,7 +136,7 @@
             {/if}
             id="Main-add_to_card"
             >
-            <i class="material-icons shopping-cart">&#xE547;</i>
+            <i class="icon-basket">&#xE547;</i>
             {l s='Do koszyka' d='Shop.Theme.Actions'}
           </button>
         </div>

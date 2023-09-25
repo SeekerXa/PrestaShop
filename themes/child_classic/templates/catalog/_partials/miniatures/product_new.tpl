@@ -136,7 +136,7 @@
             {/if}
             id="Main-add_to_card"
             >
-            <i class="material-icons shopping-cart">&#xE547;</i>
+            <i class="icon-basket">&#xE547;</i>
             {l s='Do koszyka' d='Shop.Theme.Actions'}
           </button>
         </div>

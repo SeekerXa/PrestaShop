@@ -23,7 +23,7 @@
       {foreach from=$homeslider.slides item=slide}
         <li class="slide">
           {if !empty($slide.url)}<a href="{$slide.url}">{/if}
-            <img src="{$slide.image_url}" alt="{$slide.legend|escape}" />
+            <img src="{$slide.image_url}" alt="{$slide.legend|escape}"/>
             {if $slide.title || $slide.description }
               <span class="caption">
                 <h2>{$slide.title}</h2>
