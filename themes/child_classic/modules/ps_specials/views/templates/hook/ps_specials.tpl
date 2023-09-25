@@ -24,26 +24,25 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-{debug}
 <section>
   <h1 id="product_h1">{l s='Promocje' d='Modules.Specials.Shop'}</h1>
     <div id="product_panel">
       <nav class="arrow_img prev"></nav>
-        <div class="products" id="products_container">
+        <div class="products" id="spec_products_container">
             {foreach from=$products item="product"}
              
-              {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+              {include file="catalog/_partials/miniatures/product_special.tpl" product=$product}
 
             {/foreach}
         </div>
       <nav class="arrow_img next"></nav>
     </div>
-  <a href="{$allSpecialProductsLink}">{l s='All sale products' d='Modules.Specials.Shop'}</a>
+  {* <a href="{$allSpecialProductsLink}">{l s='All sale products' d='Modules.Specials.Shop'}</a> *}
 </section>
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const productContainer = document.getElementById("products_container");
+    const productContainer = document.getElementById("spec_products_container");
     const prevButton = document.querySelector(".prev");
     const nextButton = document.querySelector(".next");
     const step = 200; // Dostosuj wartość przewijania do swoich potrzeb

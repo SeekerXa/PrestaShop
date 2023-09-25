@@ -321,7 +321,18 @@ div#bannertop span{
     margin-bottom: 50px;
 }
 
-.products{
+#spec_products_container{
+    width: 1300px;
+    padding-top: 5px;
+    display: -webkit-inline-box;
+    overflow-x: hidden;
+    margin-left: 0px;
+    height: auto;
+
+}
+
+
+#new_products_container{
     width: 1300px;
     padding-top: 5px;
     display: -webkit-inline-box;
@@ -335,11 +346,6 @@ div#bannertop span{
     z-index: -1;
 }
 
-#products .products, .featured-products .products, .product-accessories .products {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-}
 
 .product-miniature, .product-miniature .product {
     height: auto;
@@ -477,4 +483,32 @@ div#bannertop span{
           
 
 
+}
+
+#custom_banners{
+    height: 1000px;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row-custom-banners{
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+#custom_banner_left{
+padding-left: 0px;
+padding-right: 18px;
+}
+
+#custom_banner_right{
+    padding-left: 18px;
+}
+
+#newproduct_h1{
+    margin-top: 120px;
+    font-weight: 800;
+    font-size: 40px;
 }
