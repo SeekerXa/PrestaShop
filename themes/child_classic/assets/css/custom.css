@@ -284,6 +284,12 @@ div#bannertop span{
     padding-right: 8px;
 }
 
+.top-menu .sub-menu, .top-menu .sub-menu.collapse {
+    visibility: hidden;
+    opacity: 0;
+    width: 1400px;
+}
+
 /* Main Wrapper */
 #main{
     margin-top: -35px;
@@ -594,6 +600,9 @@ padding-right: 18px;
 
 .footer-container {
     margin-top: 92px;
+    border-bottom: inset;
+    border-width: thin;
+    height: 415px;
 }
 
 #store_name_footer{
@@ -647,10 +656,12 @@ text-transform:uppercase;
 }
 
 #no_wrap{
+    margin-bottom: 60px;
     display: flex;
     flex-wrap: nowrap;
     margin-right: 0px;
     margin-left: 0px;
+
 }
 
 
@@ -676,6 +687,7 @@ text-transform:uppercase;
 
 .footer-container li {
     margin-bottom: 6px;
+    
 }
 
 .block-contact, .footer-container li a{
@@ -684,4 +696,23 @@ text-transform:uppercase;
     font-family: 'Montserrat';
     font-weight: 500;
     word-spacing: -1px;
+}
+
+#paymets-img-container{
+border: gray;
+}
+
+#payments-text{
+    font-family: 'Sen';
+    font-size: 14px;
+    color: gray;
+}
+
+#payment-img{
+    margin-top: 20px;
+    margin-left: -25px;
+}
+
+#text-payments{
+    margin-top: 32px;
 }
