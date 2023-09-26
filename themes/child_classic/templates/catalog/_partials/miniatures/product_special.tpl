@@ -101,6 +101,11 @@
                   sprintf=['%price%' => Context::getContext()->currentLocale->formatPrice($product.price_tax_exc, $currency.iso_code)]}
                 </p>
               {/block}
+           
+              <p class="product-min-price30-days">
+                 {l s='Najniższa cena brutto z 30 dni: ??,?? zł' d='Shop.Theme.Catalog' }<br>
+                 {l s='Najniższa cena netto z 30 dni: ??,?? zł'  d='Shop.Theme.Catalog' }
+              </p>
 
               {if $product.has_discount}
                 {hook h='displayProductPriceBlock' product=$product type="old_price"}
