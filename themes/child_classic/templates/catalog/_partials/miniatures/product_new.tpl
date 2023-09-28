@@ -127,19 +127,19 @@
       </div>
       {include file='catalog/_partials/product-flags.tpl'}
 
-      <div class="add">
+      <div class="add"> 
+        <a class="quick-view js-quick-view" href="#" data-link-action="quickview">
           <button
             class="btn btn-primary add-to-cart"
             data-button-action="add-to-cart"
-            {if !$product.add_to_cart_url}
-              disabled
-            {/if}
             id="Main-add_to_card"
-            >
+            href="#"
+            data-link-action="quickview">
             <i class="icon-basket">&#xE547;</i>
-            {l s='Do koszyka' d='Shop.Theme.Actions'}
-          </button>
-        </div>
+            {l s='Do koszyka' d='Shop.Theme.Actions'} 
+          </button> 
+        </a>     
+      </div>
 
     </div>  
   </article>

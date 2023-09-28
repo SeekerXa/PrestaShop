@@ -21,7 +21,7 @@
 
 #wrapper{
     padding-top: 10px;
-    margin-top: -10px;
+    margin-top: 10px;
     background: #ffffff;
 }
 
@@ -296,6 +296,7 @@ div#bannertop span{
 }
 
 .homeslider-container {
+    margin-top: -20px;
     position: relative;
     float: left;
     width: 100%;
@@ -464,6 +465,21 @@ i.icon-basket{
     letter-spacing: 1px;
     background-color: #434242;
 }
+
+.quick-view js-quick-view{
+    padding: 0.5rem 1.25rem;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 61px;
+    width: 250px;
+    margin-left: 3px;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+
 
 .add-to-cart:hover{
     background-color: #bd0713;
@@ -743,4 +759,25 @@ border: gray;
 
 #text-payments{
     margin-top: 22px;
+}
+
+.product-images>li.thumb-container .thumb.selected, .product-images>li.thumb-container .thumb:hover {
+    border: #bd0713 3px solid;
+
+}
+
+.has-discount .discount {
+    display: inline-block;
+    padding: 0.3125rem 0.625rem;
+    margin-left: 0.625rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    background: #bd0713;
+}
+
+.has-discount .page-content.page-cms ul, .has-discount p, .has-discount.product-price, .page-content.page-cms .has-discount ul {
+    color: #bd0713;
+
 }
