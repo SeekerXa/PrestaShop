@@ -230,8 +230,8 @@ div#bannertop span{
 
 #cart_count_background {
     text-align: center;
-    top: 34px;
-    right: 0px;
+    top: 33px;
+    right: -1px;
     position: absolute;
     background: #434242;
     clip-path: circle(50%);
@@ -245,6 +245,62 @@ div#bannertop span{
     font-size: 11px; 
 
 }
+
+#btn-add-to-card-mine{
+
+    height: 61px;
+    width: 250px;
+    margin-left: 5px;
+    background-color: #434242;
+    padding: 0.12rem 1.25rem;
+}
+#text_to_cart_main{
+    font-size: 12px;
+    font-family: 'Sen';
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 57px;
+    word-spacing: 0px;
+    letter-spacing: 3px;
+}
+
+#btn-add-to-card-mine:hover{
+    background-color: #bd0713;
+}
+
+#blockcart-modal .product-name{
+    color: #bd0713;
+}
+
+#quantity_wanted_hide{
+    z-index: -2;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+}
+
+
+#cart_quantity_tekst{
+    font-family: 'Sen';
+    color: #ffffff;
+    font-size: 11px; 
+
+}
+
+.icon-bag{
+    font-size:  18px;
+}
+
+#cart_position{
+
+}
+
+#_desktop_cart{
+    padding-top: 3em;
+    margin-left: 27px;
+    text-align: center;
+}
+
 
 #cart_panel_container{
     position: absolute;
@@ -268,12 +324,13 @@ div#bannertop span{
     height: 22px;
 }
 #cart_panel_text{
-    padding-top: 6px;
+    padding-top: 3px;
     padding-left: 0px;
     font-family: 'Sen';
     font-weight: 500;
     font-size: 13px;
     letter-spacing: 0;
+    color: black;
 }
 
 #wrapper_conatiner{
@@ -365,7 +422,7 @@ div#bannertop span{
 }
 
 i.icon-basket{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .product-miniature .thumbnail-container{
@@ -481,9 +538,6 @@ i.icon-basket{
 
 
 
-.add-to-cart:hover{
-    background-color: #bd0713;
-}
 
 
 

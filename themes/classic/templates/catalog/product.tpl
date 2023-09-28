@@ -131,6 +131,7 @@
                   {block name='product_refresh'}{/block}
                 </form>
               {/block}
+
             </div>
 
             {block name='hook_display_reassurance'}
