@@ -25,10 +25,10 @@
           {if !empty($slide.url)}<a href="{$slide.url}">{/if}
             <img src="{$slide.image_url}" alt="{$slide.legend|escape}"/>
             {if $slide.title || $slide.description }
-              <span class="caption">
+              {* <span class="caption">
                 <h2>{$slide.title}</h2>
                 <div>{$slide.description nofilter}</div>
-              </span>
+              </span> *}
             {/if}
           {if !empty($slide.url)}</a>{/if}
         </li>

@@ -352,7 +352,13 @@ div#bannertop span{
     margin-top: -35px;
 }
 
+.homeslider{
+    height: 500px;
+    overflow-x: hidden;
+}
+
 .homeslider-container {
+    height: 500px;
     margin-top: -20px;
     position: relative;
     float: left;
@@ -588,8 +594,8 @@ i.icon-basket{
 }
 
 #custom_banners{
-    height: 957px;
-    padding-top: 83px;
+    height: 930px;
+    padding-top: 57px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -610,14 +616,15 @@ padding-right: 18px;
 }
 
 #newproduct_h1{
-    margin-top: 113px;
+    margin-top: 117px;
     font-weight: 800;
     font-size: 40px;
 }
 
 
+
 #blognews_h1{
-    margin-top: 142px;
+    margin-top: 117px;
     font-weight: 800;
     font-size: 40px;
 }
